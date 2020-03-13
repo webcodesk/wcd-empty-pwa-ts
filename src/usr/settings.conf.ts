@@ -1,5 +1,4 @@
-/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "SettingsProps" }]*/
-/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "defaultSettings" }]*/
+// eslint no-unused-vars
 import PropTypes from 'prop-types';
 import { ThemeColorTypes } from './settings.props';
 
@@ -86,3 +85,5 @@ export const defaultSettings = {
     },
   }
 };
+
+type SettingsPropsType = PropTypes.InferProps<typeof SettingsProps>;
